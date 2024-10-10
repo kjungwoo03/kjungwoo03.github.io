@@ -17,8 +17,9 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p class="name" style="text-align: center;">
+              <p class="name" style="text-align: center; font-weight: bold;">
                 Jungwoo Kim
+              </p>
               </p>
               <br>
               <p>
@@ -30,8 +31,8 @@
               </p>
               <p style="text-align:center">
                 <a href="mailto:kjungwoo@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
-                <a href="data/curticulum_vitae_1010.pdf">CV</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=gusyMHMAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                <a href="data/Curriculum_Vitae_1011.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=gusyMHMAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/jungwoo-kim-44a700288/">LinkedIn</a> &nbsp;/&nbsp;
                 <a href="https://github.com/kjugwoo03/">Github</a>
               </p>
@@ -98,7 +99,7 @@
                     <p>
                       HAE-RAE Bench evaluates large language model's understanding of Korean culture, offering a challenge beyond traditional English-based benchmarks.
                     </p>
-                    <p>Dataset available at <a href="https://huggingface.co/datasets/HAERAE-HUB/HAE_RAE_BENCH_1.1">HAERAE-HUB</a> and Github available at <a href="https://github.com/HAE-RAE/HAE-RAE-BENCH">HAE-RAE Bench</a></p>
+                    <p>Dataset available at <a href="https://huggingface.co/datasets/HAERAE-HUB/HAE_RAE_BENCH_1.1">HAERAE-HUB</a>.</p>
                   </td>
                 </tr>
                 <tr>
@@ -128,7 +129,73 @@
           <tr>
             <td style="padding:20px;">
               <h2>Projects</h2>
-              <p>Include descriptions of major projects you've worked on, with links to GitHub repositories, demo videos, or any relevant details.</p>
+              <table style="width:100%;margin:auto;">
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/audio-sentiment.png" alt="Audio Sentiment Classification" width="160" height="160">
+                  </td>
+                  <td width="75%" valign="middle">
+                    <a href="https://meteor-microwave-835.notion.site/24-1-DSL-x-WesomE-08a468c84ef94ed3855a464fff58fb32">
+                      <span class="papertitle">Audio Sentiment Classification</span>
+                    </a>
+                    <p>
+                      This work is part of 24-2 Yonsei DSL Corporate Project with WesomE.
+                    </p>
+                    <p>
+                      Developing a lightweight model (under 500MB) for recongizing emotions from speaker's voice data. We focus on feature augmentation by analyzing the high-frequency results of Fourier Transform.
+                    </p>
+                    <p>
+                      <em>Due to security issues, the materials cannot be disclosed. Please contact me if needed.</em>
+                    </p>
+                  
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/prompt.png" alt="HAE-RAE Bench" width="160" height="160">
+                  </td>
+                  <td width="75%" valign="middle">
+                    <a href="https://github.com/kjungwoo03/SUPER_RESOLUTION_RED_CNN">
+                      <span class="papertitle">Prompt Engineering</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/red-cnn.png" alt="HAE-RAE Bench" width="160" height="160">
+                  </td>
+                  <td width="75%" valign="middle">
+                    <a href="https://github.com/kjungwoo03/SUPER_RESOLUTION_RED_CNN">
+                      <span class="papertitle">Medical Image Super Resolution</span>
+                    </a>
+                    <p>
+                      Implementation of <a href="https://arxiv.org/abs/1702.00288">Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network</a>. This work is a part of the project in <a href="https://sites.google.com/view/yonsei-medisyslab/home">Medisys Lab</a>.<br>
+                    </p>
+                    <p> 
+                      The research focuses on enhancing low-dose CT images by super-resolving them to match the quality of normal-dose images. Additionally, as a follow-up study, we replaced the original architecture with a U-Net model to further evaluate the effectiveness in preserving image details. 
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <img src="images/coronary.png" alt="Acute Coronary Syndrome Detection" width="160" height="160">
+                  </td>
+                  <td width="75%" valign="middle">
+                    <a href="https://github.com/kjungwoo03/2023-ECG_CHALLENGE">
+                      <span class="papertitle">Acute Coronary Syndrome Detection on Wearable Device</span>
+                    </a>
+                    <p>
+                      <em><strong>Won an Award for Excellence</strong> on 2023 Yonsei Medical Convergence Challenge (with <a href="https://github.com/ChangdaeVictorLee">ChangeDae Lee</a>, Hyelim Kim, YoungJun Na)</em>
+                    </p>
+                    <p>
+                      Developing a ResNet-based deep learning model for diagnosing acute coronary syndrome using wearable devices. We focus on detecting the condition using ECG signals from a limited number of leads, optimized for real-world application on wearable platforms.
+                    </p>
+                    <p>
+                      Our presentation template is available <a href="data/ecg_final_template.pdf">here</a>.
+                    </p>
+                  </td>
+                </tr>                               
+              </table>
             </td>
           </tr>
         </table>
@@ -138,10 +205,19 @@
           <tr>
             <td style="padding:20px;">
               <h2>Teaching Experience</h2>
-              <p>This section could include hobbies, side projects, community contributions, or anything else you’d like to share.</p>
+              <p>
+                <strong>Computational Thinking and SW Programming (YCS1001)</strong><br>
+                <em>Fall 2024, Summer 2024, Spring 2024, Spring 2023 </em><br>
+              </p>
+              <p>
+                <strong>Mechatronics Project (IIT4312)*</strong><br>
+                <em>Spring 2024</em> <em style="display: block; text-align: right;">* Via tutoring program hosted by Yonsei University.</em><br>
+                
+              </p>
             </td>
           </tr>
         </table>
+
 
         <!-- Miscellaneous Section -->
         <table style="width:100%;margin:auto;">
@@ -158,6 +234,7 @@
           <tr>
             <td style="padding:20px;">
               <p style="text-align:center;font-size:small;">
+                Last updated on Oct 11, 2024.<br><br>
                 © 2024 Jungwoo Kim. All rights reserved. Design and source code adapted from <a href="https://jonbarron.info" style="font-size:small;">Jon Barron's website</a>.
               </p>
             </td>
