@@ -6,12 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jungwoo Kim</title>
   <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="al-folio/assets/css/academicons.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="#">Jungwoo Kim</a>
+    <div class="nav-links">
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#talks">Talks</a>
+      <a href="data/cv_260504.pdf">CV</a>
+    </div>
+  </nav>
+
   <!-- Header Section (Name and Profile) -->
-  <table style="width:100%;max-width:850px;margin:auto;">
+  <table class="site-shell" style="width:100%;max-width:850px;margin:auto;">
     <tr>
       <td style="padding:0px;">
         <table style="width:100%;margin:auto;">
@@ -27,13 +39,14 @@
               <p>
                 I have a broad interest in various research areas that utilize machine learning and computer vision.
                 Especially, I'm currently interested in <strong>image compression for machine (ICM)</strong> and <strong>Diffusion Models</strong>.
-              <p style="text-align:center">
-                <a href="mailto:kjungwoo@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
-                <a href="data/Curriculum_Vitae_1011.pdf">CV</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=gusyMHMAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/jungwoo-kim-44a700288/">LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://github.com/kjungwoo03">Github</a>
               </p>
+              <div class="profile-links" aria-label="Profile links">
+                <a href="mailto:kjungwoo@yonsei.ac.kr" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="data/cv_260504.pdf" aria-label="CV" title="CV"><i class="ai ai-cv"></i></a>
+                <a href="https://scholar.google.com/citations?user=gusyMHMAAAAJ&hl=en" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="https://www.linkedin.com/in/jungwoo-kim-44a700288/" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/kjungwoo03" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
               <br>
               <p style="text-align:center; font-size: 1.1em; font-weight: bold; margin-top: 10px;">
                 <em>Open to any collaboration opportunities across related research topics!</em>
@@ -51,8 +64,8 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Recent News</h2>
-              <div style="height: 20px;"></div>
+              <h2 id="news">Recent News</h2>
+              <div style="height: 0px;"></div>
               <div style="max-height:180px; overflow-y:auto; border:1px solid #e0e0e0; border-radius:8px; padding:10px; background:#fafbfc;">
                 <ul style="margin:0; padding-left:18px; font-size:1em;">
                   <li>
@@ -121,7 +134,7 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Education</h2>
+              <h2 id="education">Education</h2>
               <p>
                 <strong>Yonsei University</strong>, Seoul, Republic of Korea<br>
                 <em>M.S./Ph.D student in School of Integrated Technology</em><br>
@@ -141,7 +154,7 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Research Interests</h2>
+              <h2 id="research">Research Interests</h2>
               <p>
                 My primary research goal is <strong>to understand how deep learning models work</strong> and <strong>to utilize them in various research areas</strong>, especially in computer vision.
                 So my primary research interest just lies in various topics about machine learning and computer vision, covering my goal.<br><br>
@@ -155,109 +168,109 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Publications</h2>
-              <p style="margin-bottom: 10px;">
+              <h2 id="publications">Publications</h2>
+              <p style="margin-bottom: 0px;">
                 <!-- <strong>Legend:</strong>  -->
                 <span style="background-color: #e8f4fd; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>P</strong></span> Preprints &nbsp;
                 <span style="background-color: #fff2cc; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>C</strong></span> Conference Papers &nbsp;
                 <span style="background-color: #d5e8d4; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>J</strong></span> Journal Papers
               </p>
-              <table style="width:100%;margin:auto;">
-                 <!-- paper block starts-->
-                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle; background-color: #ffffff;">
-                    <img src="images/s-picm.png" alt="S-PIC" width="160" height="160" style="background-color: #ffffff; display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px;">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <span style="background-color: #fff2cc; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>C3</strong></span>
-                    <a href="TBD">
-                      <span class="papertitle">Coarse-to-Fine: Progressive Image Compression for Semantically Hierarchical Classification</span>
-                    </a>
-                    <br>
-                    <strong><u>Jungwoo Kim</u></strong>, Jun-Hyuk Kim, Jong-Seok Lee
-                    <br>
-                    <em>2026 IEEE International Conference on Image Processing (ICIP 2026)</em>
-                    <p>
-                      This paper proposes <strong>a coarse-to-fine progressive image compression framework for semantically hierarchical classification</strong>, with a novel semantic hierarchy-aware progressive codec.
-                    </p>
-                    <p>
-                       <em> Our code will be available soon.</em>
-                    </p>
-                  </td>
-                </tr>
+              <div class="publications-list">
+                <div class="publication-year">2026</div>
+                <article class="publication-item">
+                  <div class="publication-venue">
+                    <span class="publication-badge conference">ICIP'26</span>
+                  </div>
+                  <div class="publication-content">
+                    <span class="papertitle">Coarse-to-Fine: Progressive Image Compression for Semantically Hierarchical Classification</span>
+                    <p class="publication-authors"><strong><u>Jungwoo Kim</u></strong>, Jun-Hyuk Kim, Jong-Seok Lee</p>
+                    <p class="publication-meta"><em>2026 IEEE International Conference on Image Processing (ICIP 2026)</em></p>
+                    <div class="publication-topics">
+                      <span>Learned Image Compression</span>
+                      <span>Image Compression for Machine</span>
+                    </div>
+                    <div class="publication-links">
+                      <details class="abstract-toggle">
+                        <summary>ABS</summary>
+                        <p>Recent advances in learned image compression (LIC) have enabled practical deployments, spurring active research into image compression for machines and progressive coding schemes. However, their integration remains under-explored: prior works on progressive machine codec predominantly target sample-level difficulty adaptation (i.e., easy-to-hard), without considering semantic-level scalability. In this work, we introduce a semantic hierarchy-aware progressive codec that enables semantic scalability (i.e., coarse-to-fine) from a single bitstream. We first systematically categorize ImageNet-1K classes into CLIP embedding-based semantic hierarchies. Based on a channel-wise autoregressive framework, we decompose latent representations into hierarchically ordered channel blocks, each explicitly optimized for its corresponding semantic hierarchy level. Extensive experiments demonstrate that our approach substantially improves coarse-level recognition at low bitrates while maintaining fine-grained accuracy at higher bitrates. By reframing progressive transmission through the lens of semantic scalability, our work provides an efficient and interpretable solution for task-adaptive image coding, outperforming existing progressive codecs under hierarchical evaluation.</p>
+                      </details>
+                    </div>
+                  </div>
+                </article>
 
-                 <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <!-- <img src="images/picm.png" alt="PICM-Net" width="160" height="160"> -->
-                    <img src="" alt="To be updated" width="160" height="160" style="background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #666; font-size: 14px;">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <span style="background-color: #e8f4fd; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>P1</strong></span>
-                    <a href="https://arxiv.org/abs/2512.20070">
-                      <span class="papertitle">Progressive Learned Image Compression for Machine Perception</span>
-                    </a>
-                    <br>
-                    <strong><u>Jungwoo Kim</u></strong>, Jun-Hyuk Kim, Jong-Seok Lee
-                    <br>
-                    <em>Preprint</em>
-                    <p>
-                      This paper proposes <strong>the first machine-oriented progressive learned image codec, PICM-Net</strong>, with machine-aware prioritizations and adaptive decoding controller to maintain the desired confidence of downstream machine vision tasks.
-                    </p>
-                    <p>
-                      <!-- <em> Our code is available at <a href="https://github.com/kjungwoo03/Sorting-Matters">here</a>.</em> -->
-                       <em> Our code will be available soon.</em>
-                    </p>
-                  </td>
-                </tr>
-                <!-- paper block ends -->
-                <!-- paper block starts-->
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/csat.png" alt="CSAT" width="160" height="160">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <span style="background-color: #fff2cc; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>C2</strong></span>
-                    <!-- <br> -->
-                    <a href="https://www.arxiv.org/abs/2508.08920">
-                      <span class="papertitle"> Exploring Cross-Stage Adversarial Transferability in Class-Incremental Continual Learning</span>
-                    </a>
-                    <br>
-                    <strong><u>Jungwoo Kim</u></strong>, Jong-Seok Lee
-                    <br>
-                    <em>The 27th IEEE International Workshop on Multimedia Signal Processing (MMSP 2025)</em>
-                    <p>
-                      This paper investigates <strong>stage-transferred attacks in class-incremental continual learning (CSAT)</strong>, showing that adversarial examples generated from earlier-stage models remain effective against later-stage models. 
-                    </p>
-                    <p>
-                      <em> Our code is available at <a href="https://github.com/kjungwoo03/CSAT">here</a>.</em>
-                    </p>
-                  </td>
-                </tr>
-                <!-- paper block ends -->
-                <!-- paper block starts-->
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/hae-rae.png" alt="HAE-RAE Bench" width="160" height="160">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <span style="background-color: #fff2cc; padding: 2px 6px; border-radius: 3px; font-size: 0.9em;"><strong>C1</strong></span>
-                    <a href="https://arxiv.org/abs/2309.02706">
-                      <span class="papertitle">HAE-RAE Bench: Evaluation of Korean Knowledge in Language Models</span>
-                    </a>
-                    <br>
-                    Guijin Son, Hanwool Lee, Suwan Kim, Huiseo Kim, Jaecheol Lee, Je Won Yeom, Jihyu Jung, <strong><u>Jungwoo Kim</u></strong>, Songseong Kim
-                    <br>
-                    <em>Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)</em>
-                    <p>
-                      HAE-RAE Bench evaluates <strong>large language models' understanding of Korean culture</strong>, offering a challenge beyond traditional English-based benchmarks.
-                    </p>
-                    <p>
-                      <em> Our dataset is available at <a href="https://huggingface.co/datasets/HAERAE-HUB/HAE_RAE_BENCH_1.1">HAERAE-HUB</a>.</em>
-                    </p>
-                  </td>
-                </tr>  
-                <!-- paper block ends -->
-              </table>
+                <div class="publication-year">2025</div>
+                <article class="publication-item">
+                  <div class="publication-venue">
+                    <span class="publication-badge preprint">Preprint</span>
+                  </div>
+                  <div class="publication-content">
+                    <a class="papertitle" href="https://arxiv.org/abs/2512.20070">Progressive Learned Image Compression for Machine Perception</a>
+                    <p class="publication-authors"><strong><u>Jungwoo Kim</u></strong>, Jun-Hyuk Kim, Jong-Seok Lee</p>
+                    <p class="publication-meta"><em>arXiv Preprint</em></p>
+                    <div class="publication-topics">
+                      <span>Learned Image Compression</span>
+                      <span>Image Compression for Machine</span>
+                    </div>
+                    <div class="publication-links">
+                      <details class="abstract-toggle">
+                        <summary>ABS</summary>
+                        <p>Recent advances in learned image codecs have been extended from human perception toward machine perception. However, progressive image compression with fine granular scalability (FGS)-which enables decoding a single bitstream at multiple quality levels-remains unexplored for machine-oriented codecs. In this work, we propose a novel progressive learned image compression codec for machine perception, PICM-Net, based on trit-plane coding. By analyzing the difference between human- and machine-oriented rate-distortion priorities, we systematically examine the latent prioritization strategies in terms of machine-oriented codecs. To further enhance real-world adaptability, we design an adaptive decoding controller, which dynamically determines the necessary decoding level during inference time to maintain the desired confidence of downstream machine prediction. Extensive experiments demonstrate that our approach enables efficient and adaptive progressive transmission while maintaining high performance in the downstream classification task, establishing a new paradigm for machine-aware progressive image compression.</p>
+                      </details>
+                      <a class="pub-link" href="https://arxiv.org/abs/2512.20070">arXiv</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="publication-item">
+                  <div class="publication-venue">
+                    <span class="publication-badge conference">MMSP'25</span>
+                  </div>
+                  <div class="publication-content">
+                    <a class="papertitle" href="https://www.arxiv.org/abs/2508.08920">Exploring Cross-Stage Adversarial Transferability in Class-Incremental Continual Learning</a>
+                    <p class="publication-authors"><strong><u>Jungwoo Kim</u></strong>, Jong-Seok Lee</p>
+                    <p class="publication-meta"><em>The 27th IEEE International Workshop on Multimedia Signal Processing (MMSP 2025)</em></p>
+                    <div class="publication-topics">
+                      <span>Continual Learning</span>
+                      <span>Adversarial Robustness</span>
+                    </div>
+                    <div class="publication-links">
+                      <details class="abstract-toggle">
+                        <summary>ABS</summary>
+                        <p>Class-incremental continual learning addresses catastrophic forgetting by enabling classification models to preserve knowledge of previously learned classes while acquiring new ones. However, the vulnerability of the models against adversarial attacks during this process has not been investigated sufficiently. In this paper, we present the first exploration of vulnerability to stage-transferred attacks, i.e., an adversarial example generated using the model in an earlier stage is used to attack the model in a later stage. Our findings reveal that continual learning methods are highly susceptible to these attacks, raising a serious security issue. We explain this phenomenon through model similarity between stages and gradual robustness degradation. Additionally, we find that existing adversarial training-based defense methods are not sufficiently effective to stage-transferred attacks.</p>
+                      </details>
+                      <a class="pub-link" href="https://www.arxiv.org/abs/2508.08920">arXiv</a>
+                      <a class="pub-link" href="https://doi.org/10.1109/MMSP64401.2025.11324099">DOI</a>
+                      <a class="pub-link" href="https://github.com/kjungwoo03/CSAT">Code</a>
+                    </div>
+                  </div>
+                </article>
+
+                <div class="publication-year">2024</div>
+                <article class="publication-item">
+                  <div class="publication-venue">
+                    <span class="publication-badge conference">LREC-COLING'24</span>
+                  </div>
+                  <div class="publication-content">
+                    <a class="papertitle" href="https://arxiv.org/abs/2309.02706">HAE-RAE Bench: Evaluation of Korean Knowledge in Language Models</a>
+                    <p class="publication-authors">Guijin Son, Hanwool Lee, Suwan Kim, Huiseo Kim, Jaecheol Lee, Je Won Yeom, Jihyu Jung, <strong><u>Jungwoo Kim</u></strong>, Songseong Kim</p>
+                    <p class="publication-meta"><em>Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)</em></p>
+                    <div class="publication-topics">
+                      <span>Large Language Model</span>
+                      <span>LLM Evaluation</span>
+                      <span>Benchmark</span>
+                    </div>
+                    <div class="publication-links">
+                      <details class="abstract-toggle">
+                        <summary>ABS</summary>
+                        <p>Large language models (LLMs) trained on massive corpora demonstrate impressive capabilities in a wide range of tasks. While there are ongoing efforts to adapt these models to languages beyond English, the attention given to their evaluation methodologies remains limited. Current multilingual benchmarks often rely on back translations or re-implementations of English tests, limiting their capacity to capture unique cultural and linguistic nuances. To bridge this gap for the Korean language, we introduce the HAE-RAE Bench, a dataset curated to challenge models lacking Korean cultural and contextual depth. The dataset encompasses six downstream tasks across four domains: vocabulary, history, general knowledge, and reading comprehension. Unlike traditional evaluation suites focused on token and sequence classification or mathematical and logical reasoning, the HAE-RAE Bench emphasizes a model's aptitude for recalling Korean-specific knowledge and cultural contexts. Comparative analysis with prior Korean benchmarks indicates that the HAE-RAE Bench presents a greater challenge to non-Korean models by disturbing abilities and knowledge learned from English being transferred.</p>
+                      </details>
+                      <a class="pub-link" href="https://arxiv.org/abs/2309.02706">arXiv</a>
+                      <a class="pub-link" href="https://aclanthology.org/2024.lrec-main.704/">DOI</a>
+                      <a class="pub-link" href="https://huggingface.co/datasets/HAERAE-HUB/HAE_RAE_BENCH_1.1">Dataset</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
             </td>
           </tr>
         </table>
@@ -266,81 +279,56 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Projects</h2>
-              <table style="width:100%;margin:auto;">
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/petnow.png" alt="Monocular Dog Body Length Estimation" width="160" height="160">                 
-                  </td>
-                  <td width="75%" valign="middle">
+              <h2 id="projects">Projects</h2>
+              <div class="projects-list">
+                <article class="project-item">
+                  <div class="project-thumb">
+                    <img src="images/petnow.png" alt="Monocular Dog Body Length Estimation">
+                  </div>
+                  <div class="project-content">
+                    <div class="project-heading">
                       <span class="papertitle">Monocular Dog Body Length Estimation</span>
-                    </a>
-                    <p>
-                      <em>This work is part of 24-2 Yonsei DSL Corporate Project supported by <a href="https://www.petnow.io/ko">PetNow</a>, <a href="https://www.seoulaihub.kr/index.asp">Seoul AI Hub</a>, and advised by Prof. <a href="https://dslab-with.github.io/web/#dslab-about">Taeyoung Park</a>.</em>
-                    </p>
-                    <p>
-                      Improving a dog body length estimation model. Based on pose estimation and depth estimation models, we improve <strong>2d-to-3d transformation</strong> with camera intrinsic parameters.
-                    </p>
-                    <p>
-                      <em>Due to security issues, the materials cannot be disclosed.</em>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/dsl.png" alt="DSL" width="120" height="120" style="padding:20px;">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <span class="papertitle">Audio Sentiment Classification</span>
-                    <p>
-                      <em>This work is part of 24-1 Yonsei DSL Corporate Project supported by WesomE.</em>
-                    </p>
-                    <p>
-                      Developing a lightweight model (under 500MB) for recognizing emotions from speaker's voice data, focusing on feature augmentation through analyzing <strong>high-frequency details</strong>.
-                    </p>
-                    <p>
-                      <em>Due to security issues, the materials cannot be disclosed.</em>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/next-level.png" alt="Next Level" width="160" height="160">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <strong>NextLevel: A Choreography Generation Model with Lyric Understanding</strong>
-                    <p>
-                      <em>This work is part of 23-2 Software Project (IIT4204) with Jaeho Jin, Sangjoon Yeo, and advised by Prof. <a href="https://sites.google.com/site/jeonggilko">JeongGil Ko</a>.</em>
-                    </p>
-                    <p>
-                      Integrating lyric understanding into group choreography generation model.
-                      By <strong>incorporating text embedding into previous diffusion-based models</strong>, we generate lyric-aware dance motions.
-                    </p>
-                    <p>
-                      <em>Our materials aren't disclosed now.</em>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/red-cnn.png" alt="Medical Image Super Resolution" width="160" height="160" style="padding:5px;">
-                  </td>
-                  <td width="75%" valign="middle">
-                    <span class="papertitle">Medical Image Super Resolution</span>
-                    <p>
-                      <em>Implementation of <a href="https://arxiv.org/abs/1702.00288">Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network</a>. 
-                        This work is a part of the internship in <a href="https://sites.google.com/view/yonsei-medisyslab/home">Medisys Lab</a>, advised by Prof. <a href="https://sites.google.com/view/yonsei-medisyslab/members/professor">Jongduk Baek</a>.</em>
-                    </p>
-                    <p>
-                      The research focus on <strong>enhancing low-dose CT images</strong> by super-resolving them to match the quality of normal-dose images. 
-                      Additionally, as a follow-up study, we replaced the architecture with a U-Net to further evaluate the effectiveness in preserving details.
-                    </p>
-                    <p>
-                      <em>Our code is available <a href="https://github.com/kjungwoo03/SUPER_RESOLUTION_RED_CNN">here</a>.</em>
-                    </p>
-                  </td>
-                </tr>               
-              </table>
+                      <span class="project-duration">2024.08. ~ 2024.12.</span>
+                    </div>
+                    <dl class="project-meta">
+                      <div><dt>Role</dt><dd>Leading Researcher</dd></div>
+                      <div><dt>Experience</dt><dd>Model Development</dd></div>
+                      <div><dt>Partners</dt><dd><a href="https://www.petnow.io/ko">PetNow</a>, <a href="https://www.seoulaihub.kr/index.asp">Seoul AI Hub</a>, <a href="https://dslab-with.github.io/web/">Yonsei DSL</a></dd></div>
+                    </dl>
+                    <div class="project-tags">
+                      <span>Computer Vision</span>
+                      <span>3D Vision</span>
+                      <span>Depth Estimation</span>
+                    </div>
+                    <p>Developing dog body length estimation model by combining pose and depth estimation, focusing on <strong>2D-to-3D transformation</strong> with camera intrinsic parameters.</p>
+                    <p class="project-note">Materials cannot be disclosed due to security issues.</p>
+                  </div>
+                </article>
+
+                <article class="project-item">
+                  <div class="project-thumb">
+                    <img src="images/dsl.png" alt="DSL">
+                  </div>
+                  <div class="project-content">
+                    <div class="project-heading">
+                      <span class="papertitle">Audio Sentiment Classification</span>
+                      <span class="project-duration">2024.04. ~ 2024.06.</span>
+                    </div>
+                    <dl class="project-meta">
+                      <div><dt>Role</dt><dd>Researcher</dd></div>
+                      <div><dt>Experience</dt><dd>Model Development, Benchmarking</dd></div>
+                      <div><dt>Partners</dt><dd>WesomE, Yonsei DSL</dd></div>
+                    </dl>
+                    <div class="project-tags">
+                      <span>Audio ML</span>
+                      <span>Efficient ML</span>
+                      <span>Sentiment Classification</span>
+                    </div>
+                    <p>Developing a lightweight model under 500MB for recognizing emotion from speaker voice data, with feature augmentation based on <strong>high-frequency details</strong>.</p>
+                    <p class="project-note">Materials cannot be disclosed due to security issues.</p>
+                  </div>
+                </article>
+              </div>
             </td>
           </tr>
         </table>
@@ -349,7 +337,7 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Honors and Awards</h2>
+              <h2 id="awards">Honors and Awards</h2>
               <p>
                 <strong>Best Project Award, 2024-2 DSL Modeling Project</strong><br>
                 <em>2024-2 DSL Modeling Project Presentation (2024.09.24.) held by Yonsei Data Science Lab.</em>
@@ -363,9 +351,9 @@
               </p>
               <p>
                 <strong>Excellence Award, 2023 Yonsei Medical Convergence Challenge</strong><br>
-                <em>Yonsei Medical Convergence Challenge (2023.01.30. ~ 2023.01.31.) held by The Medical Scientist Training Program.</em>
-                <br>
-                <em>Our presentation is available <a href="data/ecg_final_template.pdf" target="_blank">here</a>.</em>
+                <em>Yonsei Medical Convergence Challenge (2023.01.) held by The Medical Scientist Training Program.</em>
+                <!-- <br>
+                <em>Our presentation is available <a href="data/ecg_final_template.pdf" target="_blank">here</a>.</em> -->
               </p>
             </td>
           </tr>
@@ -375,10 +363,10 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Academic Services</h2>
+              <h2 id="service">Academic Services</h2>
               <p>
                 <strong>
-                  Reviewer
+                  Reviewer (Selected)
                 </strong><br> <em>IEEE TMM 2026, ICIP 2026, ICASSP 2026.</em>
               </p>
             </td>
@@ -389,7 +377,7 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Invited Talks</h2>
+              <h2 id="talks">Invited Talks</h2>
               <p>
                 <strong>Learned Image Compression and Computer Vision</strong><br>
                 <em> 2025 Summer Alumni Seminar in Yonsei DSL - Aug 21, 2025</em><br>
@@ -423,7 +411,7 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Teaching Assistant</h2>
+              <h2 id="teaching">Teaching Assistant</h2>
               <p> 
                 <strong>Machine Learning and Pattern Recognition (AAI5001)</strong><br>
                 <em>Spring 2026</em><br>
@@ -457,11 +445,11 @@
         <table style="width:100%;margin:auto;">
           <tr>
             <td style="padding:20px;">
-              <h2>Miscellanea</h2>
+              <h2 id="misc">Miscellanea</h2>
               <p>
                 <strong>MAAP Lab, Modulab</strong><br>
                 <em>Senior Researcher (Jan. 2026 - Present)</em><br>
-                <a href="https://huggingface.co/m-a-a-p"> MAAP (Music AI Assemble People!) Lab</a> is a non-commercial research group at MODULAB, led by <a href="https://junst.github.io/">Junyoung Koh</a>.
+                <a href="https://huggingface.co/m-a-a-p"> MAAP (Music AI Assemble People) Lab</a> is a non-commercial research group at MODULAB, led by <a href="https://junst.github.io/">Junyoung Koh</a>.
                 MAAP Lab focuses on advancing the foundations of Music AI through practical research, then sharing results openly with the community.
               </p>
               <p>
@@ -491,7 +479,6 @@
                 <em>Freshman Vice Representative (Mar. 2022 - Feb. 2023)</em><br>
               </p>
             </td>
-          </td>
           </tr>
         </table>
         <!-- Footer Section -->
@@ -499,9 +486,10 @@
           <tr>
             <td style="padding:20px;">
               <p style="text-align:center;font-size:small;">
-                Last updated on May 01, 2026.<br><br>
-                © 2025 Jungwoo Kim. All rights reserved. Design and source code adapted from 
-                <a href="https://jonbarron.info" style="font-size:small;">Jon Barron's website</a>.
+                Last updated on May 04, 2026.<br><br>
+                © 2026 Jungwoo Kim. All rights reserved. Design and source code adapted from
+                <a href="https://jonbarron.info" style="font-size:small;">Jon Barron's website</a>, with visual touches inspired by
+                <a href="https://github.com/alshedivat/al-folio" style="font-size:small;">al-folio</a>.
               </p>
             </td>
           </tr>
