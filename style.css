@@ -134,53 +134,6 @@
     background-color: #ffffd0;
   }
 
-  @font-face {
-    font-display: block;
-    font-family: "Font Awesome 6 Free";
-    font-style: normal;
-    font-weight: 900;
-    src: url("al-folio/assets/webfonts/fa-solid-900.woff2") format("woff2");
-  }
-
-  @font-face {
-    font-display: block;
-    font-family: "Font Awesome 6 Brands";
-    font-style: normal;
-    font-weight: 400;
-    src: url("al-folio/assets/webfonts/fa-brands-400.woff2") format("woff2");
-  }
-
-  .fa-solid,
-  .fa-brands {
-    display: inline-block;
-    font-style: normal;
-    line-height: 1;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .fa-solid {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-  }
-
-  .fa-brands {
-    font-family: "Font Awesome 6 Brands";
-    font-weight: 400;
-  }
-
-  .fa-envelope::before {
-    content: "\f0e0";
-  }
-
-  .fa-linkedin::before {
-    content: "\f08c";
-  }
-
-  .fa-github::before {
-    content: "\f09b";
-  }
-
   :root {
     --global-bg-color: #ffffff;
     --global-card-bg-color: #ffffff;
@@ -300,6 +253,19 @@
     border-bottom: 0;
     color: var(--global-text-color);
     font-size: 18px;
+  }
+
+  .profile-links svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  .icon-text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
   }
 
   .profile-links a:hover,
