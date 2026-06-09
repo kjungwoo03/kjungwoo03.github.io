@@ -429,6 +429,21 @@
     margin: 4px 0 0;
   }
 
+<<<<<<< HEAD
+=======
+  .author-note-symbol {
+    font-size: 0.8em;
+    line-height: 0;
+  }
+
+  .publication-note {
+    margin: 2px 0 0;
+    color: var(--global-text-color-light);
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+>>>>>>> 859608e (Update 0603)
   .publication-topics {
     display: flex;
     flex-wrap: wrap;
