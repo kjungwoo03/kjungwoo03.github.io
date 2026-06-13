@@ -311,9 +311,16 @@
     margin-bottom: 8px;
   }
 
-  h2#publications + p span,
-  h2#publications + p + table span[style*="background-color"] {
-    border-radius: 4px !important;
+  .publication-legend {
+    margin: 0 0 6px;
+    color: var(--global-text-color-light);
+    font-size: 13px;
+  }
+
+  .publication-legend span {
+    color: var(--global-text-color);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
   }
 
   h2#publications + p + table tr,
@@ -358,9 +365,7 @@
   }
 
   .publication-item {
-    display: grid;
-    grid-template-columns: 116px minmax(0, 1fr);
-    gap: 18px;
+    display: block;
     padding: 16px 12px;
     border-bottom: 1px solid var(--global-divider-color);
     transition: background-color 160ms ease;
@@ -370,41 +375,15 @@
     background: var(--global-hover-bg-color);
   }
 
-  .publication-venue {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2px;
-  }
-
-  .publication-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 70px;
-    min-height: 24px;
-    padding: 3px 9px;
-    border-radius: 4px;
-    color: #111111;
-    font-size: 12px;
+  .publication-index {
+    display: inline-block;
+    margin-right: 3px;
+    color: inherit;
+    font-size: inherit;
     font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .publication-badge.preprint {
-    background: #e7f0ff;
-    color: #214f91;
-  }
-
-  .publication-badge.conference {
-    background: #fff0df;
-    color: #8a4b1a;
-  }
-
-  .publication-badge.journal {
-    background: #e3f5ea;
-    color: #246346;
+    font-variant-numeric: tabular-nums;
+    line-height: inherit;
+    white-space: nowrap;
   }
 
   .publication-content {
@@ -429,8 +408,6 @@
     margin: 4px 0 0;
   }
 
-<<<<<<< HEAD
-=======
   .author-note-symbol {
     font-size: 0.8em;
     line-height: 0;
@@ -443,7 +420,6 @@
     line-height: 1.35;
   }
 
->>>>>>> 859608e (Update 0603)
   .publication-topics {
     display: flex;
     flex-wrap: wrap;
@@ -694,15 +670,7 @@
     }
 
     .publication-item {
-      grid-template-columns: 1fr;
-      gap: 8px;
       padding: 14px 4px;
-    }
-
-    .publication-venue {
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
     }
 
     .publication-links {
