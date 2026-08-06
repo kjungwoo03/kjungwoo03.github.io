@@ -5,8 +5,8 @@ import picm from "./PICM.js";
 import ctf from "./CtF.js";
 import mosaic from "./Mosaic.js";
 import vespa from "./VESPA.js";
-import fpNac from "./FP-NAC.js";
-import saeCp from "./SAE-CP.js";
-import PPSI from "./PPSI.js"
+// import fpNac from "./FP-NAC.js";
+// import saeCp from "./SAE-CP.js";
+// import PPSI from "./PPSI.js"
 
-export default [haeRae, csat, comoe, picm, ctf, mosaic, vespa, fpNac, saeCp, PPSI];
+export default [haeRae, csat, comoe, picm, ctf, mosaic, vespa];
