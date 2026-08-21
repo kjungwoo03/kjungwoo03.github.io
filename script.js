@@ -7,6 +7,13 @@ const PUBLICATION_LINKS = [
   ["dataset", "Dataset"],
 ];
 
+const PUBLICATION_TYPE_CODES = {
+  preprint: "P",
+  conference: "C",
+  workshop: "W",
+  journal: "J",
+};
+
 const NEWS_PREVIEW_COUNT = 6;
 
 function appendAuthors(container, authors) {
@@ -30,14 +37,15 @@ function createPublicationItem(publication) {
   article.className = "publication-item";
   article.dataset.publicationId = publication.id;
 
-  const badge = document.createElement("div");
-  badge.className = `venue-badge ${publication.venueType}`;
-  badge.textContent = publication.venueLabel;
-
   const copy = document.createElement("div");
   copy.className = "publication-copy";
 
   const heading = document.createElement("h4");
+  const label = document.createElement("span");
+  label.className = "publication-label";
+  label.textContent = `${publication.displayLabel} `;
+  heading.append(label);
+
   const titleUrl = publication.links.arxiv || publication.links.doi;
   if (titleUrl) {
     const titleLink = document.createElement("a");
@@ -45,7 +53,7 @@ function createPublicationItem(publication) {
     titleLink.textContent = publication.title;
     heading.append(titleLink);
   } else {
-    heading.textContent = publication.title;
+    heading.append(publication.title);
   }
 
   const authors = document.createElement("p");
@@ -80,20 +88,42 @@ function createPublicationItem(publication) {
   });
 
   copy.append(heading, authors, venue, actions);
-  article.append(badge, copy);
+  article.append(copy);
   return article;
+}
+
+function addPublicationLabels(items) {
+  const typeCounts = new Map();
+
+  return [...items]
+    .sort(
+      (a, b) =>
+        a.releaseDate.localeCompare(b.releaseDate) || a.sourceIndex - b.sourceIndex
+    )
+    .map((publication) => {
+      const typeCode = PUBLICATION_TYPE_CODES[publication.venueType] || "O";
+      const nextNumber = (typeCounts.get(typeCode) || 0) + 1;
+      typeCounts.set(typeCode, nextNumber);
+
+      return {
+        ...publication,
+        displayLabel: `[${typeCode}${nextNumber}]`,
+      };
+    });
 }
 
 function renderPublications() {
   const list = document.querySelector("#publication-list");
   if (!list) return;
 
-  const sorted = publications
-    .filter(
-      (publication) =>
-        typeof publication.releaseDate === "string" && publication.releaseDate.trim()
-    )
-    .map((publication, sourceIndex) => ({ ...publication, sourceIndex }))
+  const sorted = addPublicationLabels(
+    publications
+      .filter(
+        (publication) =>
+          typeof publication.releaseDate === "string" && publication.releaseDate.trim()
+      )
+      .map((publication, sourceIndex) => ({ ...publication, sourceIndex }))
+  )
     .sort(
       (a, b) =>
         b.releaseDate.localeCompare(a.releaseDate) || a.sourceIndex - b.sourceIndex

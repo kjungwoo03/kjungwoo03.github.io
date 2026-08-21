@@ -2,7 +2,7 @@ export default {
   id: "PICM",
   releaseDate: "2026-09-08",
   venueType: "workshop",
-  venueLabel: "ECCV Workshop",
+  venueLabel: "ECCV Workshops",
   title: "Progressive Learned Image Compression for Machine Perception",
   authors: ["Jungwoo Kim", "Jun-Hyuk Kim", "Jong-Seok Lee"],
   venue: "ECCV Workshop on Low-Level Vision Frontiers",

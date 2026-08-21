@@ -2,7 +2,7 @@ export default {
   id: "CoMoE",
   releaseDate: "2026-07-10",
   venueType: "workshop",
-  venueLabel: "ICML Workshop",
+  venueLabel: "ICML Workshops",
   title: "Probing Token Spaces under Generator Shift in AI-Generated Music Detection",
   authors: ["Joonyong Park", "Jungwoo Kim", "Junyoung Koh", "Yuki Saito"],
   venue: "ICML Workshop on Machine Learning for Audio",

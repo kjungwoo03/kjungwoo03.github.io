@@ -10,6 +10,8 @@ export default {
     "We introduce a semantic hierarchy-aware progressive codec that enables coarse-to-fine semantic scalability from a single bitstream. We systematically categorize ImageNet-1K classes into CLIP embedding-based semantic hierarchies and decompose latent representations into hierarchically ordered channel blocks, each optimized for its corresponding hierarchy level. The approach improves coarse-level recognition at low bitrates while maintaining fine-grained accuracy at higher bitrates.",
   links: {
     arxiv: "https://arxiv.org/abs/2605.08266",
+    doi: "https://doi.org/10.1109/ICIP61757.2026.11630489",
     code: "https://github.com/kjungwoo03/Coarse-to-Fine",
+    
   },
 };
