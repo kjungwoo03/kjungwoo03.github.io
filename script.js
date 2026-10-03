@@ -16,7 +16,11 @@ const PUBLICATION_TYPE_CODES = {
 
 const NEWS_PREVIEW_COUNT = 6;
 
-function appendAuthors(container, authors) {
+function appendAuthors(container, authors, coFirstAuthors = []) {
+  const coFirstAuthorSet = new Set(
+    Array.isArray(coFirstAuthors) ? coFirstAuthors : []
+  );
+
   authors.forEach((author, index) => {
     if (index > 0) container.append(", ");
 
@@ -25,10 +29,17 @@ function appendAuthors(container, authors) {
       self.className = "author-self";
       self.textContent = author;
       container.append(self);
-      return;
+    } else {
+      container.append(author);
     }
 
-    container.append(author);
+    if (coFirstAuthorSet.has(author)) {
+      const marker = document.createElement("sup");
+      marker.className = "co-first-marker";
+      marker.setAttribute("aria-label", "equal contribution");
+      marker.textContent = "*";
+      container.append(marker);
+    }
   });
 }
 
@@ -58,7 +69,7 @@ function createPublicationItem(publication) {
 
   const authors = document.createElement("p");
   authors.className = "authors";
-  appendAuthors(authors, publication.authors);
+  appendAuthors(authors, publication.authors, publication.coFirstAuthors);
 
   const venue = document.createElement("p");
   venue.className = "venue";
@@ -114,6 +125,7 @@ function addPublicationLabels(items) {
 
 function renderPublications() {
   const list = document.querySelector("#publication-list");
+  const coFirstNote = document.querySelector("#co-first-note");
   if (!list) return;
 
   const sorted = addPublicationLabels(
@@ -128,6 +140,14 @@ function renderPublications() {
       (a, b) =>
         b.releaseDate.localeCompare(a.releaseDate) || a.sourceIndex - b.sourceIndex
     );
+
+  if (coFirstNote) {
+    coFirstNote.hidden = !sorted.some(
+      (publication) =>
+        Array.isArray(publication.coFirstAuthors) &&
+        publication.coFirstAuthors.some((author) => publication.authors.includes(author))
+    );
+  }
 
   const fragment = document.createDocumentFragment();
   let activeYear = null;
