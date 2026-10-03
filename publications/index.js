@@ -6,6 +6,5 @@ import ctf from "./CtF.js";
 import mosaic from "./Mosaic.js";
 import fpnac from "./FP-NAC.js"
 import ta from "./TA.js"
-import envc from "./ENVC.js"
 
-export default [haeRae, csat, comoe, picm, ctf, mosaic, fpnac, ta, envc];
+export default [haeRae, csat, comoe, picm, ctf, mosaic, fpnac, ta];
